@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="HotelDB" Class="RoomDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=HotelDB;Integrated Security=True" SettingsObjectName="DataAccessLayer.Properties.Settings" SettingsPropertyName="HotelDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Room" Member="Rooms">
+    <Type Name="Room">
+      <Column Name="RoomID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RoomDescription" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="RoomTypeID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RoomCharges" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="RoomServices" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="RoomType_Room" Member="RoomType" ThisKey="RoomTypeID" OtherKey="RoomTypeID" Type="RoomType" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RoomType" Member="RoomTypes">
+    <Type Name="RoomType">
+      <Column Name="RoomTypeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RoomType" Member="RoomType1" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="RoomType_Room" Member="Rooms" ThisKey="RoomTypeID" OtherKey="RoomTypeID" Type="Room" />
+    </Type>
+  </Table>
+  <Function Name="dbo.sp_ModifyRoom" Method="sp_ModifyRoom">
+    <Parameter Name="RoomID" Parameter="roomID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="RoomDesc" Parameter="roomDesc" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="RoomCharges" Parameter="roomCharges" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="RoomServices" Parameter="roomServices" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_AddRoom" Method="sp_AddRoom">
+    <Parameter Name="RoomDesc" Parameter="roomDesc" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="RoomCharges" Parameter="roomCharges" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="RoomServices" Parameter="roomServices" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="RoomTypeID" Parameter="roomTypeID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+	
+	<Ad>
+		<ImageUrl>~/images/room1.jpg</ImageUrl>
+		<NavigateUrl></NavigateUrl>
+		<AlternateText>Room for 2</AlternateText>
+		<Impressions>5</Impressions>
+		<Keyword>Double</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/images/room2.jpg</ImageUrl>
+		<NavigateUrl></NavigateUrl>
+		<AlternateText>Room for family</AlternateText>
+		<Impressions>5</Impressions>
+		<Keyword>Double</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/images/room3.jpg</ImageUrl>
+		<NavigateUrl></NavigateUrl>
+		<AlternateText>Room for 1</AlternateText>
+		<Impressions>5</Impressions>
+		<Keyword>Single</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/images/room4.jpg</ImageUrl>
+		<NavigateUrl></NavigateUrl>
+		<AlternateText>Luxury Room</AlternateText>
+		<Impressions>5</Impressions>
+		<Keyword>Luxury</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/images/room5.jpg</ImageUrl>
+		<NavigateUrl></NavigateUrl>
+		<AlternateText>Delexue Room</AlternateText>
+		<Impressions>5</Impressions>
+		<Keyword>Delexue</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/images/room6.jpg</ImageUrl>
+		<NavigateUrl></NavigateUrl>
+		<AlternateText>Suite Room</AlternateText>
+		<Impressions>5</Impressions>
+		<Keyword>suite</Keyword>
+	</Ad>
+
+</Advertisements>

@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserInside.master.cs" Inherits="OnlineHotelManagementSystemWebApplication.UserInside" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type = "text/javascript" >
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+</script>
+
+
+</head>
+<body background="Images/wood.jpg">
+       <form id="form2" runat="server">
+    <div>
+
+ <table align ="Right">
+   <tr>
+    <td><asp:Button ID="Button1" runat="server" Text="LogOut" 
+    onclick="btnLogout_Click" BackColor="#464242" ForeColor="Red" />
+    </td>   
+    </tr>
+ </table>
+
+    <center> <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/Hotel logo.jpg" /></center>
+    <br />
+    <center>
+    <asp:Menu ID="mnuAdmin" runat="server" BackColor="#FFFBD6" 
+            DynamicHorizontalOffset="2" Font-Names="Nyala" Font-Size="Large" 
+            ForeColor="#990000" Orientation="Horizontal" StaticSubMenuIndent="10px" 
+            RenderingMode="Table">
+        <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+        <DynamicMenuStyle BackColor="#FFFBD6" />
+        <DynamicSelectedStyle BackColor="#FFCC66" />
+        <Items>
+            <asp:MenuItem NavigateUrl="~/UserHome.aspx" Text="HOME" Value="HOME">
+            </asp:MenuItem>
+            <asp:MenuItem Text="VIEW ROOM" Value="VIEW ROOM" NavigateUrl="~/ViewRoom.aspx">
+            </asp:MenuItem>
+            <asp:MenuItem Text="OUR SERVICES" Value="SERVICES" NavigateUrl="~/Service.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="FOOD AND BEVERAGES" Value="FOOD AND BEVERAGES" 
+                NavigateUrl="~/UserFoodOrder.aspx">
+            </asp:MenuItem>
+            <asp:MenuItem Text="ORDER STATUS" Value="STATUS">
+                <asp:MenuItem Text="ROOM REQUESTS" Value="ROOM REQUESTS" 
+                    NavigateUrl="~/UserTrackRoomStatus.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="FOOD REQUESTS" Value="FOOD REQUESTS" 
+                    NavigateUrl="~/UserTrackFoodStatus.aspx"></asp:MenuItem>
+            </asp:MenuItem>
+            <asp:MenuItem Text="CONTACT US" Value="CONTACT US" 
+                NavigateUrl="~/UserContactUs.aspx"></asp:MenuItem>
+        </Items>
+        <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+        <StaticSelectedStyle BackColor="#FFCC66" />
+
+
+        </asp:Menu>
+
+    <table>
+    <tr>
+    <td><asp:Label ID="lblWelcome" runat="server" Text="Welcome :" Font-Bold="True" 
+            Font-Size="Large" ForeColor="Black"></asp:Label></td>
+    <td><asp:Label ID="lblSession" runat="server" Font-Bold="True" Font-Size="Large" 
+            ForeColor="Black" ></asp:Label></td>
+    </tr>
+    </table>
+    </center>
+ 
+     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+
+      </asp:ContentPlaceHolder>
+    </div>
+    
+    </form>
+</body>
+</html>

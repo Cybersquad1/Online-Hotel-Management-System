@@ -1,0 +1,13 @@
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\EntityLayers\bin\Debug\EntityLayers.dll
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\EntityLayers\bin\Debug\EntityLayers.pdb
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\EntityLayers\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\EntityLayers\obj\Debug\EntityLayers.dll
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\EntityLayers\obj\Debug\EntityLayers.pdb
+C:\Users\Gollum\Downloads\OnlineHotelManagementSystem\OnlineHotelManagementSystem\EntityLayers\bin\Debug\EntityLayers.dll
+C:\Users\Gollum\Downloads\OnlineHotelManagementSystem\OnlineHotelManagementSystem\EntityLayers\bin\Debug\EntityLayers.pdb
+C:\Users\Gollum\Downloads\OnlineHotelManagementSystem\OnlineHotelManagementSystem\EntityLayers\obj\Debug\EntityLayers.dll
+C:\Users\Gollum\Downloads\OnlineHotelManagementSystem\OnlineHotelManagementSystem\EntityLayers\obj\Debug\EntityLayers.pdb
+I:\OnlineHotelManagementSystem\OnlineHotelManagementSystem\EntityLayers\bin\Debug\EntityLayers.dll
+I:\OnlineHotelManagementSystem\OnlineHotelManagementSystem\EntityLayers\bin\Debug\EntityLayers.pdb
+I:\OnlineHotelManagementSystem\OnlineHotelManagementSystem\EntityLayers\obj\Debug\EntityLayers.dll
+I:\OnlineHotelManagementSystem\OnlineHotelManagementSystem\EntityLayers\obj\Debug\EntityLayers.pdb

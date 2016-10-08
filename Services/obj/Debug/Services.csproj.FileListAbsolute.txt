@@ -1,0 +1,27 @@
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\Services\bin\Services.dll
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\Services\bin\Services.pdb
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\Services\bin\DataAccessLayer.dll
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\Services\bin\EntityLayers.dll
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\Services\bin\DataAccessLayer.pdb
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\Services\bin\EntityLayers.pdb
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\Services\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\Services\obj\Debug\Services.dll
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\Services\obj\Debug\Services.pdb
+C:\Users\Gollum\Downloads\OnlineHotelManagementSystem\OnlineHotelManagementSystem\Services\bin\Services.dll
+C:\Users\Gollum\Downloads\OnlineHotelManagementSystem\OnlineHotelManagementSystem\Services\bin\Services.pdb
+C:\Users\Gollum\Downloads\OnlineHotelManagementSystem\OnlineHotelManagementSystem\Services\bin\DataAccessLayer.dll
+C:\Users\Gollum\Downloads\OnlineHotelManagementSystem\OnlineHotelManagementSystem\Services\bin\EntityLayers.dll
+C:\Users\Gollum\Downloads\OnlineHotelManagementSystem\OnlineHotelManagementSystem\Services\bin\DataAccessLayer.pdb
+C:\Users\Gollum\Downloads\OnlineHotelManagementSystem\OnlineHotelManagementSystem\Services\bin\EntityLayers.pdb
+C:\Users\Gollum\Downloads\OnlineHotelManagementSystem\OnlineHotelManagementSystem\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
+C:\Users\Gollum\Downloads\OnlineHotelManagementSystem\OnlineHotelManagementSystem\Services\obj\Debug\Services.dll
+C:\Users\Gollum\Downloads\OnlineHotelManagementSystem\OnlineHotelManagementSystem\Services\obj\Debug\Services.pdb
+I:\OnlineHotelManagementSystem\OnlineHotelManagementSystem\Services\bin\Services.dll
+I:\OnlineHotelManagementSystem\OnlineHotelManagementSystem\Services\bin\Services.pdb
+I:\OnlineHotelManagementSystem\OnlineHotelManagementSystem\Services\bin\DataAccessLayer.dll
+I:\OnlineHotelManagementSystem\OnlineHotelManagementSystem\Services\bin\EntityLayers.dll
+I:\OnlineHotelManagementSystem\OnlineHotelManagementSystem\Services\bin\DataAccessLayer.pdb
+I:\OnlineHotelManagementSystem\OnlineHotelManagementSystem\Services\bin\EntityLayers.pdb
+I:\OnlineHotelManagementSystem\OnlineHotelManagementSystem\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
+I:\OnlineHotelManagementSystem\OnlineHotelManagementSystem\Services\obj\Debug\Services.dll
+I:\OnlineHotelManagementSystem\OnlineHotelManagementSystem\Services\obj\Debug\Services.pdb

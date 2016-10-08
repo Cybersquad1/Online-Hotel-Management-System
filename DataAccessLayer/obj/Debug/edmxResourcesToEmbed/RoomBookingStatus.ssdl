@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RoomStatus.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="RoomStatusStoreContainer">
+    <EntitySet Name="Booking" EntityType="RoomStatus.Store.Booking" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Booking">
+    <Key>
+      <PropertyRef Name="BookingID" />
+    </Key>
+    <Property Name="BookingID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="varchar" MaxLength="6" />
+    <Property Name="GuestName" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="BookingDate" Type="date" Nullable="false" />
+    <Property Name="CheckInDate" Type="date" Nullable="false" />
+    <Property Name="CheckOutDate" Type="date" />
+    <Property Name="NoOfAdult" Type="int" />
+    <Property Name="NoOfChildren" Type="int" />
+    <Property Name="NoOfInfants" Type="int" />
+    <Property Name="IdentityType" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="IdentityNumber" Type="varchar" Nullable="false" MaxLength="16" />
+    <Property Name="BookingStatus" Type="varchar" MaxLength="8" />
+    <Property Name="RoomTypeID" Type="int" />
+    <Property Name="RoomType" Type="varchar" MaxLength="50" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="HotelDB" Class="MenuDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=HotelDB;Integrated Security=True" SettingsObjectName="DataAccessLayer.Properties.Settings" SettingsPropertyName="HotelDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Menu" Member="Menus">
+    <Type Name="Menu">
+      <Column Name="MenuID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MenuTypeID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="MenuItem" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.sp_ModifyMenu" Method="sp_ModifyMenu">
+    <Parameter Name="MenuID" Parameter="menuID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MenuItem" Parameter="menuItem" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="MenuDesc" Parameter="menuDesc" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="MenuPrice" Parameter="menuPrice" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

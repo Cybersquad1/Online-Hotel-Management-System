@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="HotelDBPaymentModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="HotelDBPaymentModelStoreContainer">
+          <EntitySet Name="Payment" EntityType="HotelDBPaymentModel.Store.Payment" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="Payment">
+          <Key>
+            <PropertyRef Name="PaymentID" />
+          </Key>
+          <Property Name="PaymentID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="OrderID" Type="int" />
+          <Property Name="DateOfPayment" Type="date" Nullable="false" />
+          <Property Name="PaymentMode" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="BankName" Type="varchar" MaxLength="30" />
+          <Property Name="CardType" Type="varchar" MaxLength="30" />
+          <Property Name="CardNumber" Type="varchar" MaxLength="16" />
+          <Property Name="NameOnCard" Type="varchar" MaxLength="16" />
+          <Property Name="Amount" Type="decimal" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HotelDBPaymentModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="PaymentHotelDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Payments" EntityType="HotelDBPaymentModel.Payment" />
+        </EntityContainer>
+        <EntityType Name="Payment">
+          <Key>
+            <PropertyRef Name="PaymentID" />
+          </Key>
+          <Property Name="PaymentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="OrderID" Type="Int32" />
+          <Property Name="DateOfPayment" Type="DateTime" Nullable="false" />
+          <Property Name="PaymentMode" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="BankName" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="CardType" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="CardNumber" Type="String" MaxLength="16" Unicode="false" FixedLength="false" />
+          <Property Name="NameOnCard" Type="String" MaxLength="16" Unicode="false" FixedLength="false" />
+          <Property Name="Amount" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="HotelDBPaymentModelStoreContainer" CdmEntityContainer="PaymentHotelDBEntities">
+          <EntitySetMapping Name="Payments"><EntityTypeMapping TypeName="HotelDBPaymentModel.Payment"><MappingFragment StoreEntitySet="Payment">
+            <ScalarProperty Name="PaymentID" ColumnName="PaymentID" />
+            <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+            <ScalarProperty Name="DateOfPayment" ColumnName="DateOfPayment" />
+            <ScalarProperty Name="PaymentMode" ColumnName="PaymentMode" />
+            <ScalarProperty Name="BankName" ColumnName="BankName" />
+            <ScalarProperty Name="CardType" ColumnName="CardType" />
+            <ScalarProperty Name="CardNumber" ColumnName="CardNumber" />
+            <ScalarProperty Name="NameOnCard" ColumnName="NameOnCard" />
+            <ScalarProperty Name="Amount" ColumnName="Amount" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="DisplayPaymentEntity">
+        <EntityTypeShape EntityType="HotelDBPaymentModel.Payment" Width="1.5" PointX="0.75" PointY="0.75" Height="2.7494921874999996" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="DeleteMenuList">
+        <s:complexType />
+      </s:element>
+      <s:element name="DeleteMenuListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteMenuListResult" type="tns:ArrayOfMenu" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfMenu">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Menu" nillable="true" type="tns:Menu" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Menu">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="_menuID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="_menuTypeID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="_menuDescription" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="_menuPrice" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="_menuItem" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DeleteMenu">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MenuID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteMenuResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="DeleteMenuListSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteMenuList" />
+  </wsdl:message>
+  <wsdl:message name="DeleteMenuListSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteMenuListResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteMenuSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteMenu" />
+  </wsdl:message>
+  <wsdl:message name="DeleteMenuSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteMenuResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DeleteMenuServiceSoap">
+    <wsdl:operation name="DeleteMenuList">
+      <wsdl:input message="tns:DeleteMenuListSoapIn" />
+      <wsdl:output message="tns:DeleteMenuListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMenu">
+      <wsdl:input message="tns:DeleteMenuSoapIn" />
+      <wsdl:output message="tns:DeleteMenuSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DeleteMenuServiceSoap" type="tns:DeleteMenuServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DeleteMenuList">
+      <soap:operation soapAction="http://tempuri.org/DeleteMenuList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMenu">
+      <soap:operation soapAction="http://tempuri.org/DeleteMenu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DeleteMenuServiceSoap12" type="tns:DeleteMenuServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DeleteMenuList">
+      <soap12:operation soapAction="http://tempuri.org/DeleteMenuList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMenu">
+      <soap12:operation soapAction="http://tempuri.org/DeleteMenu" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DeleteMenuService">
+    <wsdl:port name="DeleteMenuServiceSoap" binding="tns:DeleteMenuServiceSoap">
+      <soap:address location="http://localhost:2020/DeleteMenuService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DeleteMenuServiceSoap12" binding="tns:DeleteMenuServiceSoap12">
+      <soap12:address location="http://localhost:2020/DeleteMenuService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

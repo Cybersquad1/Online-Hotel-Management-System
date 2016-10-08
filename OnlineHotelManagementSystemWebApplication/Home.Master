@@ -1,0 +1,118 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="OnlineHotelManagementSystemWebApplication.Home" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+    <table width="100%" >
+    
+    <tr>
+    <td style ="width:20%"> 
+    
+  <marquee behavior="scroll" direction="right">
+      <asp:Image ID="Image1" runat="server" Height="150px" 
+            ImageUrl="~/Images/DSC_2926.jpg" Width="250px" 
+            BorderStyle="Dotted" BorderColor="Black" BorderWidth="3" /></marquee>
+            </td>
+           
+            <td class="style1">
+       
+      <asp:Image ID="Image2" runat="server" Height="150px" 
+            ImageUrl="~/Images/Sea bedroom tray.jpg" Width="730px" BorderColor="Black" 
+                    BorderWidth="4px" BorderStyle="Ridge" /> 
+
+             </td>
+           
+            <td style ="width:20%">
+        
+  <marquee behavior="scroll" direction="left">
+      <asp:Image ID="Room1" runat="server" Height="150px" 
+            ImageUrl="~/Images/room_service_strawberries.jpg"
+            BorderStyle="Dotted"  Width="250px" BorderColor="Black" BorderWidth="3" /></td>
+    
+    
+    </tr>
+  
+  
+  <tr>
+  <td style ="width:20%"> 
+   
+      <asp:Image ID="Image6" runat="server" Height="370px" 
+            ImageUrl="~/Images/burj.jpg" Width="250px" BorderColor="Black" 
+          BorderWidth="4px" BorderStyle="Ridge" />
+            
+             </td>
+  
+  <%--Content Place Holder --%>
+  
+  <center>
+  <td valign="top"> 
+      <asp:Image ID="Image8" runat="server" Height="90px" 
+          ImageUrl="~/Images/xyz.jpg" Width="730px" />
+         <asp:Menu ID="lblmenu" runat="server" BackColor="#400040" ForeColor="White" 
+                  Orientation="Horizontal" StaticSubMenuIndent="16px" Width="720px" 
+                      BorderStyle="Double" BorderWidth="1px" Font-Bold="True" Font-Size="Large" 
+                      Height="30px" RenderingMode="Table">
+                  <Items>
+                      <asp:MenuItem Text="| Home |" Value="Home" NavigateUrl="~/Home.aspx"></asp:MenuItem>
+                      <asp:MenuItem Text="| About Us |" Value="About Us" 
+                          NavigateUrl="http://localhost:58227/HomePage/AboutUs"></asp:MenuItem>
+                      <asp:MenuItem Text="| Contact Us |" Value="Contact Us" 
+                          NavigateUrl="http://localhost:58227/HomePage/ContactUs"></asp:MenuItem>
+                  </Items>
+              </asp:Menu></center>
+  <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"> 
+  
+  
+  </asp:ContentPlaceHolder></td>
+      
+   <td style ="width:20%">
+    
+   <asp:Image ID="Image7" runat="server" Height="370px" 
+            ImageUrl="~/Images/icecream.jpg" Width="250px" BorderColor="Black" 
+           BorderWidth="4px" BorderStyle="Ridge" /> 
+            
+  </td> 
+  
+  </tr>  
+
+
+  <tr >
+  <td style ="width:20%">
+  <marquee behavior="alternate" direction="right">
+    <asp:Image ID="Image3" runat="server" Height="150px"   
+          ImageUrl="~/Images/58456-room-types-1-adina-brisbane-apartment-hotel-studio-room-queen.jpg" 
+          Width="250px" BorderColor="Black" BorderWidth="3" BorderStyle="Dotted"  /></marquee>
+          
+          </td>
+          <td class="style1">
+      
+      <asp:Image ID="Image4" runat="server" Height="150px" 
+            ImageUrl="~/Images/idli.jpg" Width="730px" BorderColor="Black" BorderWidth="4px" 
+                  BorderStyle="Ridge" />
+            
+            </td>
+
+            <td style ="width:20%">
+             <marquee behavior="alternate" direction="left">
+      <asp:Image ID="Image5" runat="server" Height="150px" 
+            ImageUrl="~/Images/tvroom.jpg" Width="250px" BorderColor="Black" BorderWidth="3" BorderStyle="Dotted" /></marquee>
+            </td>
+  
+  </tr>
+    </table>
+      
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineHotelManagementSystemWebApplication", "OnlineHotelManagementSystemWebApplication\OnlineHotelManagementSystemWebApplication.csproj", "{3954F6E7-74F1-4609-8654-7361437766FB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{08D82DBF-8D77-4AC3-98B0-378719BD290C} = {08D82DBF-8D77-4AC3-98B0-378719BD290C}
+		{5F592ECD-F99F-4D59-A2D0-42B4B004C0DC} = {5F592ECD-F99F-4D59-A2D0-42B4B004C0DC}
+		{D662A7F7-3849-48A0-B44C-6A06AFEC950F} = {D662A7F7-3849-48A0-B44C-6A06AFEC950F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityLayers", "EntityLayers\EntityLayers.csproj", "{170D8889-04DC-4410-BD49-5536413BF477}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{CE11E569-5563-4324-9C85-96B98DE442DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OHMTestProject", "OHMTestProject\OHMTestProject.csproj", "{CB9DD9E0-BC02-4E2E-B580-FAE9157AE706}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6ED9D5E3-85D9-4953-B129-D1EE82A5B83F}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		OnlineHotelManagementSystem.vsmdi = OnlineHotelManagementSystem.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{08D82DBF-8D77-4AC3-98B0-378719BD290C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddMenuWCF", "AddMenuWCF\AddMenuWCF.csproj", "{5F592ECD-F99F-4D59-A2D0-42B4B004C0DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserBookingWCFService", "UserBookingWCFService\UserBookingWCFService.csproj", "{D662A7F7-3849-48A0-B44C-6A06AFEC950F}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = OnlineHotelManagementSystem.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3954F6E7-74F1-4609-8654-7361437766FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3954F6E7-74F1-4609-8654-7361437766FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3954F6E7-74F1-4609-8654-7361437766FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3954F6E7-74F1-4609-8654-7361437766FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{170D8889-04DC-4410-BD49-5536413BF477}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{170D8889-04DC-4410-BD49-5536413BF477}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{170D8889-04DC-4410-BD49-5536413BF477}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{170D8889-04DC-4410-BD49-5536413BF477}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE11E569-5563-4324-9C85-96B98DE442DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE11E569-5563-4324-9C85-96B98DE442DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE11E569-5563-4324-9C85-96B98DE442DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE11E569-5563-4324-9C85-96B98DE442DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB9DD9E0-BC02-4E2E-B580-FAE9157AE706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB9DD9E0-BC02-4E2E-B580-FAE9157AE706}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB9DD9E0-BC02-4E2E-B580-FAE9157AE706}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB9DD9E0-BC02-4E2E-B580-FAE9157AE706}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08D82DBF-8D77-4AC3-98B0-378719BD290C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08D82DBF-8D77-4AC3-98B0-378719BD290C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08D82DBF-8D77-4AC3-98B0-378719BD290C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08D82DBF-8D77-4AC3-98B0-378719BD290C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F592ECD-F99F-4D59-A2D0-42B4B004C0DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F592ECD-F99F-4D59-A2D0-42B4B004C0DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F592ECD-F99F-4D59-A2D0-42B4B004C0DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F592ECD-F99F-4D59-A2D0-42B4B004C0DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D662A7F7-3849-48A0-B44C-6A06AFEC950F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D662A7F7-3849-48A0-B44C-6A06AFEC950F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D662A7F7-3849-48A0-B44C-6A06AFEC950F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D662A7F7-3849-48A0-B44C-6A06AFEC950F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

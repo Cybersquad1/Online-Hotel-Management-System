@@ -1,0 +1,9 @@
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\AddMenuWcfService\bin\AddMenuWcfService.dll
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\AddMenuWcfService\bin\AddMenuWcfService.pdb
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\AddMenuWcfService\bin\DataAccessLayer.dll
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\AddMenuWcfService\bin\EntityLayers.dll
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\AddMenuWcfService\bin\DataAccessLayer.pdb
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\AddMenuWcfService\bin\EntityLayers.pdb
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\AddMenuWcfService\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\AddMenuWcfService\obj\Debug\AddMenuWcfService.dll
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\AddMenuWcfService\obj\Debug\AddMenuWcfService.pdb

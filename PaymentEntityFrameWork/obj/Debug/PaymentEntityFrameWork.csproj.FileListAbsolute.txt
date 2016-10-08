@@ -1,0 +1,5 @@
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\PaymentEntityFrameWork\bin\PaymentEntityFrameWork.dll
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\PaymentEntityFrameWork\bin\PaymentEntityFrameWork.pdb
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\PaymentEntityFrameWork\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\PaymentEntityFrameWork\obj\Debug\PaymentEntityFrameWork.dll
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\PaymentEntityFrameWork\obj\Debug\PaymentEntityFrameWork.pdb

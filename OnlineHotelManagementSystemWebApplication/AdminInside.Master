@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminInside.master.cs" Inherits="OnlineHotelManagementSystemWebApplication.AdminInside" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body background="Images/adminback.jpg">
+    <form id="form1" runat="server">
+ <table align ="Right">
+   <tr>
+    <td><asp:Button ID="btnLogout" runat="server" Text="LogOut" 
+    onclick="btnLogout_Click" BackColor="#464242" ForeColor="Red" />
+    </td>   
+    </tr>
+ </table>
+
+    <center> <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/Hotel logo.jpg" /></center>
+   
+    <br />
+
+    <center>
+    <asp:Menu ID="mnuAdmin" runat="server" BackColor="#E3EAEB" 
+            DynamicHorizontalOffset="2" Font-Names="Tempus Sans ITC" Font-Size="Large" 
+            ForeColor="#666666" Orientation="Horizontal" StaticSubMenuIndent="10px" 
+            RenderingMode="Table">
+        <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
+        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+        <DynamicMenuStyle BackColor="#E3EAEB" />
+        <DynamicSelectedStyle BackColor="#1C5E55" />
+        <Items>
+            <asp:MenuItem NavigateUrl="~/AdminHome.aspx" Text="HOME" Value="HOME">
+            </asp:MenuItem>
+            <asp:MenuItem Text="ROOM" Value="ROOM">
+                <asp:MenuItem Text="ADD ROOM" Value="ADD ROOM" NavigateUrl="~/AddRoom.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="DELETE ROOM" Value="DELETE ROOM" 
+                    NavigateUrl="~/DeleteRoom.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="MODIFY ROOM" Value="MODIFY ROOM" 
+                    NavigateUrl="~/ModifyRoom.aspx"></asp:MenuItem>
+            </asp:MenuItem>
+            <asp:MenuItem Text="FOOD AND BEVERAGES" Value="FOOD AND BEVERAGES">
+                <asp:MenuItem Text="ADD MENU" Value="ADD MENU" NavigateUrl="~/AddMenu.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="DELETE MENU" Value="DELETE MENU" 
+                    NavigateUrl="~/DeleteMenu.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="MODIFY MENU" Value="MODIFY MENU" 
+                    NavigateUrl="~/ModifyMenu.aspx"></asp:MenuItem>
+            </asp:MenuItem>
+            <asp:MenuItem Text="REQUESTS" Value="REQUESTS">
+                <asp:MenuItem Text="ROOM REQUESTS" Value="ROOM REQUESTS" 
+                    NavigateUrl="~/AdminRoomApprov-Req.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="FOOD REQUESTS" Value="FOOD REQUESTS" 
+                    NavigateUrl="~/AdminFoodApprove-Reject.aspx"></asp:MenuItem>
+            </asp:MenuItem>
+        </Items>
+        <StaticHoverStyle BackColor="#666666" ForeColor="White" />
+        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+        <StaticSelectedStyle BackColor="#1C5E55" />
+
+        </asp:Menu>
+    </center>
+  
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+   
+    </form>
+</body>
+</html>

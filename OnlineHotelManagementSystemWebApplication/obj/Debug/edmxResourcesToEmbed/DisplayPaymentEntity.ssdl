@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HotelDBPaymentModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="HotelDBPaymentModelStoreContainer">
+    <EntitySet Name="Payment" EntityType="HotelDBPaymentModel.Store.Payment" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Payment">
+    <Key>
+      <PropertyRef Name="PaymentID" />
+    </Key>
+    <Property Name="PaymentID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OrderID" Type="int" />
+    <Property Name="DateOfPayment" Type="date" Nullable="false" />
+    <Property Name="PaymentMode" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="BankName" Type="varchar" MaxLength="30" />
+    <Property Name="CardType" Type="varchar" MaxLength="30" />
+    <Property Name="CardNumber" Type="varchar" MaxLength="16" />
+    <Property Name="NameOnCard" Type="varchar" MaxLength="16" />
+    <Property Name="Amount" Type="decimal" Nullable="false" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NewHotelDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="NewHotelDBModelStoreContainer">
+    <EntitySet Name="Booking" EntityType="NewHotelDBModel.Store.Booking" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="City" EntityType="NewHotelDBModel.Store.City" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Country" EntityType="NewHotelDBModel.Store.Country" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Credentials" EntityType="NewHotelDBModel.Store.Credentials" store:Type="Tables" store:Schema="dbo" store:Name="Credentials">
+      <DefiningQuery>SELECT 
+      [Credentials].[UserID] AS [UserID], 
+      [Credentials].[Password] AS [Password], 
+      [Credentials].[UserType] AS [UserType]
+      FROM [dbo].[Credentials] AS [Credentials]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Customer" EntityType="NewHotelDBModel.Store.Customer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Menu" EntityType="NewHotelDBModel.Store.Menu" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MenuTypes" EntityType="NewHotelDBModel.Store.MenuTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Orders" EntityType="NewHotelDBModel.Store.Orders" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Payment" EntityType="NewHotelDBModel.Store.Payment" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Room" EntityType="NewHotelDBModel.Store.Room" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RoomType" EntityType="NewHotelDBModel.Store.RoomType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="State" EntityType="NewHotelDBModel.Store.State" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK__Booking__RoomTyp__2180FB33" Association="NewHotelDBModel.Store.FK__Booking__RoomTyp__2180FB33">
+      <End Role="RoomType" EntitySet="RoomType" />
+      <End Role="Booking" EntitySet="Booking" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Booking__UserID__21B6055D" Association="NewHotelDBModel.Store.FK__Booking__UserID__21B6055D">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="Booking" EntitySet="Booking" />
+    </AssociationSet>
+    <AssociationSet Name="FK__City__StateID__09DE7BCC" Association="NewHotelDBModel.Store.FK__City__StateID__09DE7BCC">
+      <End Role="State" EntitySet="State" />
+      <End Role="City" EntitySet="City" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Credentia__UserI__1273C1CD" Association="NewHotelDBModel.Store.FK__Credentia__UserI__1273C1CD">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="Credentials" EntitySet="Credentials" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Customer__CityID__0EA330E9" Association="NewHotelDBModel.Store.FK__Customer__CityID__0EA330E9">
+      <End Role="City" EntitySet="City" />
+      <End Role="Customer" EntitySet="Customer" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Customer__Countr__108B795B" Association="NewHotelDBModel.Store.FK__Customer__Countr__108B795B">
+      <End Role="Country" EntitySet="Country" />
+      <End Role="Customer" EntitySet="Customer" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Customer__StateI__0F975522" Association="NewHotelDBModel.Store.FK__Customer__StateI__0F975522">
+      <End Role="State" EntitySet="State" />
+      <End Role="Customer" EntitySet="Customer" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Orders__RoomID__44FF419A" Association="NewHotelDBModel.Store.FK__Orders__RoomID__44FF419A">
+      <End Role="Room" EntitySet="Room" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Orders__UserID__440B1D61" Association="NewHotelDBModel.Store.FK__Orders__UserID__440B1D61">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Payment__OrderID__70DDC3D8" Association="NewHotelDBModel.Store.FK__Payment__OrderID__70DDC3D8">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="Payment" EntitySet="Payment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Room__RoomTypeID__1BFD2C07" Association="NewHotelDBModel.Store.FK__Room__RoomTypeID__1BFD2C07">
+      <End Role="RoomType" EntitySet="RoomType" />
+      <End Role="Room" EntitySet="Room" />
+    </AssociationSet>
+    <AssociationSet Name="FK__State__CountryID__0519C6AF" Association="NewHotelDBModel.Store.FK__State__CountryID__0519C6AF">
+      <End Role="Country" EntitySet="Country" />
+      <End Role="State" EntitySet="State" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Booking">
+    <Key>
+      <PropertyRef Name="BookingID" />
+    </Key>
+    <Property Name="BookingID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="varchar" MaxLength="6" />
+    <Property Name="GuestName" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="BookingDate" Type="date" Nullable="false" />
+    <Property Name="CheckInDate" Type="date" Nullable="false" />
+    <Property Name="CheckOutDate" Type="date" />
+    <Property Name="NoOfAdult" Type="int" />
+    <Property Name="NoOfChildren" Type="int" />
+    <Property Name="NoOfInfants" Type="int" />
+    <Property Name="IdentityType" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="IdentityNumber" Type="varchar" Nullable="false" MaxLength="16" />
+    <Property Name="BookingStatus" Type="varchar" MaxLength="8" />
+    <Property Name="RoomTypeID" Type="int" />
+    <Property Name="RoomType" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="CityID" />
+    </Key>
+    <Property Name="CityID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CityName" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="StateID" Type="int" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="CountryID" />
+    </Key>
+    <Property Name="CountryID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CountryName" Type="varchar" Nullable="false" MaxLength="30" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'HotelDB.dbo.Credentials' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Credentials">
+    <Key>
+      <PropertyRef Name="Password" />
+    </Key>
+    <Property Name="UserID" Type="varchar" MaxLength="6" />
+    <Property Name="Password" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="UserType" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="varchar" Nullable="false" MaxLength="6" />
+    <Property Name="CustomerName" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Email" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="PhoneNumber" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="HouseNumber" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Street" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CityID" Type="int" />
+    <Property Name="StateID" Type="int" />
+    <Property Name="CountryID" Type="int" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="MenuID" />
+    </Key>
+    <Property Name="MenuID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MenuTypeID" Type="int" />
+    <Property Name="Description" Type="varchar" MaxLength="50" />
+    <Property Name="Price" Type="decimal" Nullable="false" />
+    <Property Name="MenuItem" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="MenuTypes">
+    <Key>
+      <PropertyRef Name="MenuTypeID" />
+    </Key>
+    <Property Name="MenuTypeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MenuType" Type="varchar" Nullable="false" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="OrderID" />
+    </Key>
+    <Property Name="OrderID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="varchar" MaxLength="6" />
+    <Property Name="RoomID" Type="varchar" MaxLength="20" />
+    <Property Name="OrderDate" Type="date" Nullable="false" />
+    <Property Name="Amount" Type="decimal" Nullable="false" />
+    <Property Name="OrderStatus" Type="varchar" MaxLength="8" />
+    <Property Name="ServingDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Payment">
+    <Key>
+      <PropertyRef Name="PaymentID" />
+    </Key>
+    <Property Name="PaymentID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OrderID" Type="int" />
+    <Property Name="DateOfPayment" Type="date" Nullable="false" />
+    <Property Name="PaymentMode" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="BankName" Type="varchar" MaxLength="30" />
+    <Property Name="CardType" Type="varchar" MaxLength="30" />
+    <Property Name="CardNumber" Type="varchar" MaxLength="16" />
+    <Property Name="NameOnCard" Type="varchar" MaxLength="16" />
+    <Property Name="Amount" Type="decimal" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Room">
+    <Key>
+      <PropertyRef Name="RoomID" />
+    </Key>
+    <Property Name="RoomID" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="RoomDescription" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="RoomTypeID" Type="int" />
+    <Property Name="RoomCharges" Type="decimal" Nullable="false" />
+    <Property Name="RoomServices" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="RoomType">
+    <Key>
+      <PropertyRef Name="RoomTypeID" />
+    </Key>
+    <Property Name="RoomTypeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoomType" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="State">
+    <Key>
+      <PropertyRef Name="StateID" />
+    </Key>
+    <Property Name="StateID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="StateName" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="CountryID" Type="int" />
+  </EntityType>
+  <Association Name="FK__Booking__RoomTyp__2180FB33">
+    <End Role="RoomType" Type="NewHotelDBModel.Store.RoomType" Multiplicity="0..1" />
+    <End Role="Booking" Type="NewHotelDBModel.Store.Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RoomType">
+        <PropertyRef Name="RoomTypeID" />
+      </Principal>
+      <Dependent Role="Booking">
+        <PropertyRef Name="RoomTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Booking__UserID__21B6055D">
+    <End Role="Customer" Type="NewHotelDBModel.Store.Customer" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Booking" Type="NewHotelDBModel.Store.Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Booking">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__City__StateID__09DE7BCC">
+    <End Role="State" Type="NewHotelDBModel.Store.State" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="City" Type="NewHotelDBModel.Store.City" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="State">
+        <PropertyRef Name="StateID" />
+      </Principal>
+      <Dependent Role="City">
+        <PropertyRef Name="StateID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Credentia__UserI__1273C1CD">
+    <End Role="Customer" Type="NewHotelDBModel.Store.Customer" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Credentials" Type="NewHotelDBModel.Store.Credentials" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Credentials">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Customer__CityID__0EA330E9">
+    <End Role="City" Type="NewHotelDBModel.Store.City" Multiplicity="0..1" />
+    <End Role="Customer" Type="NewHotelDBModel.Store.Customer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="CityID" />
+      </Principal>
+      <Dependent Role="Customer">
+        <PropertyRef Name="CityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Customer__Countr__108B795B">
+    <End Role="Country" Type="NewHotelDBModel.Store.Country" Multiplicity="0..1" />
+    <End Role="Customer" Type="NewHotelDBModel.Store.Customer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="CountryID" />
+      </Principal>
+      <Dependent Role="Customer">
+        <PropertyRef Name="CountryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Customer__StateI__0F975522">
+    <End Role="State" Type="NewHotelDBModel.Store.State" Multiplicity="0..1" />
+    <End Role="Customer" Type="NewHotelDBModel.Store.Customer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="State">
+        <PropertyRef Name="StateID" />
+      </Principal>
+      <Dependent Role="Customer">
+        <PropertyRef Name="StateID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Orders__RoomID__44FF419A">
+    <End Role="Room" Type="NewHotelDBModel.Store.Room" Multiplicity="0..1" />
+    <End Role="Orders" Type="NewHotelDBModel.Store.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Room">
+        <PropertyRef Name="RoomID" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="RoomID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Orders__UserID__440B1D61">
+    <End Role="Customer" Type="NewHotelDBModel.Store.Customer" Multiplicity="0..1" />
+    <End Role="Orders" Type="NewHotelDBModel.Store.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Payment__OrderID__70DDC3D8">
+    <End Role="Orders" Type="NewHotelDBModel.Store.Orders" Multiplicity="0..1" />
+    <End Role="Payment" Type="NewHotelDBModel.Store.Payment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="OrderID" />
+      </Principal>
+      <Dependent Role="Payment">
+        <PropertyRef Name="OrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Room__RoomTypeID__1BFD2C07">
+    <End Role="RoomType" Type="NewHotelDBModel.Store.RoomType" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Room" Type="NewHotelDBModel.Store.Room" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RoomType">
+        <PropertyRef Name="RoomTypeID" />
+      </Principal>
+      <Dependent Role="Room">
+        <PropertyRef Name="RoomTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__State__CountryID__0519C6AF">
+    <End Role="Country" Type="NewHotelDBModel.Store.Country" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="State" Type="NewHotelDBModel.Store.State" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="CountryID" />
+      </Principal>
+      <Dependent Role="State">
+        <PropertyRef Name="CountryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <!--Errors Found During Generation:
+      warning 6013: The table/view 'HotelDB.dbo.BookingDetails' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="BookingDetails">
+        <Property Name="BookingID" Type="int" />
+        <Property Name="RoomID" Type="varchar" MaxLength="20" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'HotelDB.dbo.CardInfo' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="CardInfo">
+        <Property Name="Card No" Type="varchar" MaxLength="16" />
+        <Property Name="Name On Card" Type="varchar" MaxLength="40" />
+        <Property Name="Card Type" Type="varchar" MaxLength="10" />
+        <Property Name="Bank Name" Type="varchar" MaxLength="40" />
+        <Property Name="Expiry Date" Type="varchar" MaxLength="10" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'HotelDB.dbo.OrdersDetails' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="OrdersDetails">
+        <Property Name="MenuItem" Type="varchar" MaxLength="50" />
+        <Property Name="RequiredQuantity" Type="int" />
+        <Property Name="SubTotal" Type="decimal" />
+        <Property Name="UserID" Type="varchar" MaxLength="50" />
+        <Property Name="OrderID" Type="int" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'HotelDB.dbo.TEMPORDER' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="TEMPORDER">
+        <Property Name="MENU ITEM" Type="varchar" MaxLength="50" />
+        <Property Name="QUANTITY" Type="int" />
+        <Property Name="PRICE/QTY" Type="decimal" />
+        <Property Name="TOTAL PRICE" Type="decimal" />
+        <Property Name="User ID" Type="varchar" MaxLength="50" />
+      </EntityType>-->
+</Schema>

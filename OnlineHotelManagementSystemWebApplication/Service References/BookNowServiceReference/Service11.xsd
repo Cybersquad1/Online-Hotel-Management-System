@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/EntityLayers" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/EntityLayers" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Booking">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="_bookingDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_checkIn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_checkOut" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_guestName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_identityNO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_identityType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_noAdults" type="xs:int" />
+      <xs:element minOccurs="0" name="_noInfants" type="xs:int" />
+      <xs:element minOccurs="0" name="_nochildren" type="xs:int" />
+      <xs:element minOccurs="0" name="_roomType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_roomTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="_status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_userID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Booking" nillable="true" type="tns:Booking" />
+  <xs:complexType name="ArrayOfRoomType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RoomType" nillable="true" type="tns:RoomType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRoomType" nillable="true" type="tns:ArrayOfRoomType" />
+  <xs:complexType name="RoomType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="_roomType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_roomTypeID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RoomType" nillable="true" type="tns:RoomType" />
+</xs:schema>

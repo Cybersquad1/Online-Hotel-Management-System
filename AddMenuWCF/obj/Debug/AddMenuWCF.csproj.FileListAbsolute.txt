@@ -1,0 +1,27 @@
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\AddMenuWCF\bin\AddMenuWCF.dll
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\AddMenuWCF\bin\AddMenuWCF.pdb
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\AddMenuWCF\bin\DataAccessLayer.dll
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\AddMenuWCF\bin\EntityLayers.dll
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\AddMenuWCF\bin\DataAccessLayer.pdb
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\AddMenuWCF\bin\EntityLayers.pdb
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\AddMenuWCF\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\AddMenuWCF\obj\Debug\AddMenuWCF.dll
+C:\Users\tmguser\Desktop\RLL Solutions\OnlineHotelManagementSystem\AddMenuWCF\obj\Debug\AddMenuWCF.pdb
+C:\Users\Gollum\Downloads\OnlineHotelManagementSystem\OnlineHotelManagementSystem\AddMenuWCF\bin\AddMenuWCF.dll
+C:\Users\Gollum\Downloads\OnlineHotelManagementSystem\OnlineHotelManagementSystem\AddMenuWCF\bin\AddMenuWCF.pdb
+C:\Users\Gollum\Downloads\OnlineHotelManagementSystem\OnlineHotelManagementSystem\AddMenuWCF\bin\DataAccessLayer.dll
+C:\Users\Gollum\Downloads\OnlineHotelManagementSystem\OnlineHotelManagementSystem\AddMenuWCF\bin\EntityLayers.dll
+C:\Users\Gollum\Downloads\OnlineHotelManagementSystem\OnlineHotelManagementSystem\AddMenuWCF\bin\DataAccessLayer.pdb
+C:\Users\Gollum\Downloads\OnlineHotelManagementSystem\OnlineHotelManagementSystem\AddMenuWCF\bin\EntityLayers.pdb
+C:\Users\Gollum\Downloads\OnlineHotelManagementSystem\OnlineHotelManagementSystem\AddMenuWCF\obj\Debug\AddMenuWCF.csprojResolveAssemblyReference.cache
+C:\Users\Gollum\Downloads\OnlineHotelManagementSystem\OnlineHotelManagementSystem\AddMenuWCF\obj\Debug\AddMenuWCF.dll
+C:\Users\Gollum\Downloads\OnlineHotelManagementSystem\OnlineHotelManagementSystem\AddMenuWCF\obj\Debug\AddMenuWCF.pdb
+I:\OnlineHotelManagementSystem\OnlineHotelManagementSystem\AddMenuWCF\bin\AddMenuWCF.dll
+I:\OnlineHotelManagementSystem\OnlineHotelManagementSystem\AddMenuWCF\bin\AddMenuWCF.pdb
+I:\OnlineHotelManagementSystem\OnlineHotelManagementSystem\AddMenuWCF\bin\DataAccessLayer.dll
+I:\OnlineHotelManagementSystem\OnlineHotelManagementSystem\AddMenuWCF\bin\EntityLayers.dll
+I:\OnlineHotelManagementSystem\OnlineHotelManagementSystem\AddMenuWCF\bin\DataAccessLayer.pdb
+I:\OnlineHotelManagementSystem\OnlineHotelManagementSystem\AddMenuWCF\bin\EntityLayers.pdb
+I:\OnlineHotelManagementSystem\OnlineHotelManagementSystem\AddMenuWCF\obj\Debug\AddMenuWCF.csprojResolveAssemblyReference.cache
+I:\OnlineHotelManagementSystem\OnlineHotelManagementSystem\AddMenuWCF\obj\Debug\AddMenuWCF.dll
+I:\OnlineHotelManagementSystem\OnlineHotelManagementSystem\AddMenuWCF\obj\Debug\AddMenuWCF.pdb

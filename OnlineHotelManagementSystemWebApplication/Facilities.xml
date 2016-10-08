@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+	<Ad>
+		<ImageUrl>~/images/spa.jpg</ImageUrl>
+		<NavigateUrl></NavigateUrl>
+		<AlternateText>W3Schools Main Site</AlternateText>
+		<Impressions>5</Impressions>
+		<Keyword>elearning</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/images/swimming.jpg</ImageUrl>
+		<NavigateUrl></NavigateUrl>
+		<AlternateText>XHTML Tutorial</AlternateText>
+		<Impressions>5</Impressions>
+		<Keyword>XHTML</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/images/gym.jpg</ImageUrl>
+		<NavigateUrl></NavigateUrl>
+		<AlternateText>XHTML Tutorial</AlternateText>
+		<Impressions>5</Impressions>
+		<Keyword>XHTML</Keyword>
+	</Ad>
+	
+</Advertisements>

@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User.master.cs" Inherits="OnlineHotelManagementSystemWebApplication.User" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body background="Images/wood.jpg">
+    <form id="form1" runat="server">
+    <center> <asp:Image ID="imgLogo" runat="server" AlternateText="XYZ HOTEL LTD" 
+            BorderColor="Black" BorderWidth="1px" ImageAlign="Middle" 
+            ImageUrl="~/Images/Hotel logo.jpg" /> </center>
+    <marquee behaviour = " scroll" direction =  " left" scrollamount = "8s"> 
+<span style = "color:Black; font-size:xx-large"><center>WELCOME TO XYZ HOTEL LTD .</center> </span></marquee>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+    </form>
+</body>
+</html>

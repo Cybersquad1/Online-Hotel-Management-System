@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+
+	<Ad>
+		<ImageUrl>~/images/single1.jpg</ImageUrl>
+		<NavigateUrl></NavigateUrl>
+		<AlternateText>Room for 1</AlternateText>
+		<Impressions>5</Impressions>
+		<Keyword>Double</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/images/single2.jpeg</ImageUrl>
+		<NavigateUrl></NavigateUrl>
+		<AlternateText>Room for 1</AlternateText>
+		<Impressions>5</Impressions>
+		<Keyword>Double</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/images/single3.JPG</ImageUrl>
+		<NavigateUrl></NavigateUrl>
+		<AlternateText>Room for 1</AlternateText>
+		<Impressions>5</Impressions>
+		<Keyword>Single</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/images/single4.jpg</ImageUrl>
+		<NavigateUrl></NavigateUrl>
+		<AlternateText>Room for 1</AlternateText>
+		<Impressions>5</Impressions>
+		<Keyword>Luxury</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/images/single5.jpg</ImageUrl>
+		<NavigateUrl></NavigateUrl>
+		<AlternateText>Room for 1</AlternateText>
+		<Impressions>5</Impressions>
+		<Keyword>Delexue</Keyword>
+	</Ad>
+
+</Advertisements>

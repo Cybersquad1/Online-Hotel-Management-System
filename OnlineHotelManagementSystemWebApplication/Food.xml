@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+	<Ad>
+		<ImageUrl>~/images/biryani.jpg</ImageUrl>
+		<AlternateText>Chicken Biryani</AlternateText>
+		<Impressions>7</Impressions>
+		<Keyword>elearning</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/images/burger.jpg</ImageUrl>
+		<AlternateText>Mega Burger</AlternateText>
+		<Impressions>7</Impressions>
+		<Keyword>XHTML</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/images/efood.jpg</ImageUrl>
+		<AlternateText>European Food</AlternateText>
+		<Impressions>7</Impressions>
+		<Keyword>elearning</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/images/idlivada.jpg</ImageUrl>
+		<AlternateText>Idli Vada</AlternateText>
+		<Impressions>6</Impressions>
+		<Keyword>XHTML</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/images/pasta.jpg</ImageUrl>
+		<AlternateText>Pasta</AlternateText>
+		<Impressions>6</Impressions>
+		<Keyword>XHTML</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/images/masaldosa.jpg</ImageUrl>
+		<AlternateText>Masala Dosa</AlternateText>
+		<Impressions>6</Impressions>
+		<Keyword>XHTML</Keyword>
+	</Ad>
+</Advertisements>
